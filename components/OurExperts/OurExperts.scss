@@ -1,0 +1,125 @@
+.our-experts {
+  margin: 0 24px 64px 24px;
+  .title {
+    font-family: "Source Serif Pro";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 40px;
+    color: var(--gray700);
+    margin-bottom: 12px;
+  }
+
+  .accordion-item {
+    border: none;
+
+    .accordion-header {
+      .accordion-button {
+        border: 1px solid #ced4da;
+        border-bottom: 0;
+        border-radius: 0;
+
+        background: #f2f2f2;
+
+        padding: 16px 20px;
+        &::after {
+          display: none;
+        }
+
+        .accordion-arrow {
+          transition: transform 0.3s linear;
+          margin-right: 12px;
+        }
+
+        .accordion-title {
+          font-style: normal;
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 24px;
+        }
+
+        &.collapsed {
+          .accordion-arrow {
+            transform: rotate(-180deg);
+          }
+        }
+      }
+    }
+
+    .accordion-body {
+      .expert-item {
+        display: flex;
+        margin-bottom: 32px;
+        .image {
+          width: 76px;
+          height: 76px;
+          margin-right: 12px;
+        }
+        &-content {
+          .name {
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 19px;
+          }
+          .profession {
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 19px;
+            margin-bottom: 8px;
+          }
+          .description {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+          }
+        }
+      }
+    }
+    &:last-child {
+      .accordion-button {
+        &.collapsed {
+          border-bottom: 1px solid #ced4da;
+        }
+      }
+    }
+  }
+
+  @media screen and(max-width: 992px) {
+    .accordion-item {
+      border: none;
+
+      .accordion-header {
+        .accordion-button {
+          .accordion-title {
+            font-size: 16px;
+            line-height: 19.2px;
+          }
+        }
+      }
+      .accordion-body {
+        .expert-item {
+          margin-bottom: 24px;
+          .image {
+            width: 42px;
+            height: 42px;
+          }
+          &-content {
+            .name {
+              font-size: 12px;
+              line-height: 14.4px;
+            }
+            .profession {
+              font-size: 12px;
+              line-height: 14.4px;
+            }
+            .description {
+              font-weight: 400;
+              font-size: 12px;
+              line-height: 14.4px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

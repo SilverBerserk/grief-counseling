@@ -1,0 +1,94 @@
+.payment-form {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  padding: 24px;
+  max-width: 383px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  color: var(--gray900);
+
+  margin-bottom: 48px;
+
+  .col {
+    &:first-child {
+      padding-right: 4px;
+    }
+    &:last-child {
+      padding-left: 4px;
+    }
+    position: relative;
+  }
+
+  .error-label {
+    display: none;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: -0.154px;
+    margin-bottom: 8px;
+    color: var(--danger);
+    &.show {
+      display: block;
+    }
+  }
+
+  .title {
+    display: flex;
+    align-items: center;
+    &-price {
+      font-family: "Source Serif Pro";
+      font-weight: 600;
+      font-size: 28px;
+      line-height: 35px;
+      margin-right: 8px;
+    }
+    &-description {
+      color: var(--gray600);
+    }
+    margin-bottom: 24px;
+  }
+
+  .step-title {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--gray700);
+    margin-bottom: 15px;
+  }
+  .step1 {
+    margin-bottom: 38px;
+  }
+
+  .step2 {
+    .row {
+      margin-bottom: 8px;
+    }
+  }
+
+  button {
+    margin-top: 12px;
+    margin-bottom: 11px;
+  }
+
+  position: fixed;
+  transform: translateX(calc(1400px - 386px));
+  top: 112px;
+
+  @media screen and (max-width: 1458px) {
+    transform: none;
+    right: 64px;
+  }
+
+  @media screen and (max-width: 1201px) {
+    right: 62px;
+    max-width: 322px;
+  }
+
+  @media screen and (max-width: 992px) {
+    position: static;
+    max-width: unset;
+  }
+}

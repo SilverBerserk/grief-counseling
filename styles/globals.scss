@@ -1,0 +1,69 @@
+@import "bootstrap";
+
+:root {
+  --header: #ffffff;
+  --emphasis: #212529;
+  --body: #495057;
+  --primary: #0d1a33;
+  --secondary: #b2ead0;
+  --border: #cfd4d9;
+  --gray600: #6c757d;
+  --gray700: #495057;
+  --gray800: #343a40;
+  --gray900: #212529;
+  --danger: #dc3545;
+}
+
+$buttonColor: #0d1a33;
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Lato", sans-serif;
+
+  .btn-primary {
+    @include button-variant(
+      $buttonColor,
+      $buttonColor,
+      #fff,
+      lighten($buttonColor, 10%),
+      lighten($buttonColor, 10%),
+      #fff,
+      lighten($buttonColor, 20%),
+      lighten($buttonColor, 20%),
+      #fff,
+      lighten($buttonColor, 40%),
+      lighten($buttonColor, 40%),
+      #fff
+    );
+    box-shadow: none !important;
+  }
+
+  .form-check-input:checked {
+    background-color: $buttonColor;
+    border-color: $buttonColor;
+    box-shadow: none !important;
+  }
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@import "../layout/Header/Header.scss";
+@import "../layout/Footer/Footer.scss";
+@import "../layout/Layout.scss";
+@import "../pages/course/course.scss";
+@import "../components/Banner/Banner.scss";
+@import "../components/PaymentForm/PaymentForm.scss";
+@import "../components/OurExperts/OurExperts.scss";
+@import "../components/AboutCourse/AboutCourse.scss";
+@import "../components/FAQs/FAQs.scss";
+@import "../components/ContentOutline/ContentOutline.scss";
+@import "../components/EmbedVideo/EmbedVideo.scss";

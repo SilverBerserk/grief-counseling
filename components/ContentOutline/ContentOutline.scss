@@ -1,0 +1,21 @@
+.content-outline {
+  border: 4px solid #d9d9d9;
+  height: 329px;
+  padding: 24px;
+  margin-bottom: 48px;
+  .title {
+    font-family: "Source Serif";
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 40px;
+    color: var(--gray700);
+  }
+  .content {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 38px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 82px;
+  }
+}

@@ -1,0 +1,38 @@
+.banner {
+  padding: 17px 0;
+  background: linear-gradient(
+    90deg,
+    rgba(178, 234, 208, 0) 0.15%,
+    #b2ead0 18.9%,
+    #b2ead0 81.1%,
+    rgba(178, 234, 208, 0) 99.85%
+  );
+
+  font-family: "Source Serif Pro";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 35px;
+
+  text-transform: capitalize;
+  text-align: center;
+
+  margin-bottom: 64px;
+
+  &.on-form {
+    display: none;
+    margin-bottom: 24px;
+  }
+
+  @media screen and (max-width: 992px) {
+    &.on-form {
+      display: block;
+      font-size: 14px;
+      line-height: 18px;
+      margin-bottom: 0;
+    }
+    &.on-page {
+      display: none;
+    }
+  }
+}

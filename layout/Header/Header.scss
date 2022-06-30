@@ -1,0 +1,53 @@
+.page-header-wrapper {
+  height: 64px;
+  position: relative;
+  .page-header {
+    height: 64px;
+    width: 100vw;
+    z-index: 10;
+    padding: 0 64px;
+    background-color: var(--primary);
+
+    display: flex;
+    align-items: center;
+    position: fixed;
+    .back-btn {
+      margin-right: 48px;
+      white-space: nowrap;
+      .text {
+        margin-left: 13px;
+      }
+      &:hover {
+        img {
+          transition: filter 0.15s ease-in-out;
+          filter: invert(1);
+        }
+      }
+    }
+    .btn-link {
+      color: var(--header);
+      font-style: normal;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 24px;
+      text-transform: uppercase;
+      text-decoration: underline;
+      margin-right: 25px;
+    }
+  }
+
+  @media screen and (max-width: 992px) {
+    .page-header {
+      padding: 0 12px;
+      .back-btn {
+        margin-right: 10px;
+      }
+      .btn-link {
+        font-size: 14px;
+        line-height: 17px;
+        margin-right: 0px;
+        padding: 6px 8px;
+      }
+    }
+  }
+}

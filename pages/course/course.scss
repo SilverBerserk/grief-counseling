@@ -1,0 +1,31 @@
+.course-page {
+  margin: 48px auto;
+  padding-right: 447px;
+  max-width: 1400px;
+
+  .video {
+    margin-bottom: 24px;
+  }
+
+  @media screen and (max-width: 1458px) {
+    margin: 48px 64px;
+  }
+
+  @media screen and (max-width: 1201px) {
+    margin: 48px 62px;
+    padding-right: 386px;
+  }
+
+  @media screen and (max-width: 992px) {
+    margin: 24px 48px 60px 48px;
+    padding: 0;
+  }
+
+  @media screen and (max-width: 768px) {
+    margin: 24px 24px 60px 24px;
+  }
+
+  @media screen and (max-width: 567px) {
+    margin: 24px 12.5px 60px 12.5px;
+  }
+}
